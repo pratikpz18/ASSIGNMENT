@@ -24,6 +24,10 @@ const Calculate = () => {
         s:3,t:4,v:6,w:6,x:5,y:1,z:7
     }
 
+    const addtillunit=(n)=>{
+        return (n - 1) % 9 + 1;
+    }
+
     const handlesubmit = (event) => {
         event.preventDefault();
         // console.log(word,word.toLowerCase());
@@ -36,11 +40,14 @@ const Calculate = () => {
             setSum(sum1);
             let sum2=sum1.toString();
             let sum3=sum2.split('').reduce((a,b)=> +a+ +b);
-            setDest(sum3);
+            let s3=addtillunit(sum3);
+            setDest(s3);
             let sum4=[...word].map(c => vowels[c] || 0).reduce((a,b) => a+b,0);
-            setSoul(sum4);
+            let s4=addtillunit(sum4);
+            setSoul(s4);
             let sum5=[...word].map(c => constants[c] || 0).reduce((a,b) => a+b,0);
-            setPers(sum5);
+            let s5=addtillunit(sum5);
+            setPers(s5);
             // console.log(word,sum,dest,soul,pers);
         }
     }
