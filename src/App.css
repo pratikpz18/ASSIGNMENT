@@ -1,38 +1,103 @@
 .App {
+  background: #BA5370; 
+  background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);
+  background: linear-gradient(to right, #F4E2D8, #BA5370);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-size: xx-large;
+}
+
+
+.heading{
+  color: #5d5d5a;
+  text-decoration: underline;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input{
+  position: relative;  
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Form{
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-div{
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.label{
+  font-weight: 700;
+  color: #f7e8e8;
+  margin-right: 1.5vw;
+}
+
+.input-field{
+  font-size: x-large;
+  width: 14vw;
+  padding: 0.3rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.input-field:focus{
+  border: 2px solid cyan;
+}
+
+.calc-btn{
+  font-size: large;
+  font-weight: 600;
+  padding: 0.4rem 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  color: #e8ffe8;
+  background-color: #2d767f;
+  text-transform: uppercase;
+  margin:1.5rem 0 0 16rem;
+  cursor: pointer;
+}
+
+.calc-btn:hover{
+  transform: scale(1.08);
+}
+
+.output{
+  margin-top: 5rem;
+  line-height: 1;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 600;
+  color: #5d5d5a;
+}
+
+.greeting{
+  color: #c5e3f6;
+  word-spacing: 0.4rem;
+}
+
+.word{
+  font-size: larger;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.pts{
+  background-color: gold;
   color: white;
+  border-radius: 5rem;
+  padding: 0.4rem;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+  position: absolute;
+  font-size: medium;
+  bottom: 0;
 }
